@@ -15,6 +15,28 @@
     </head>
     
     <body>
-        <!-- CONTENT GOES HERE -->
+        <div class="player-container">
+            <!-- Audio Element -->
+            <audio id="audio-element" src="https://soundhelix.com"></audio>
+
+            <!-- Song Info -->
+            <div class="song-details">
+                <div class="album-art" id="album-art" style="background-image: url('https://unsplash.com');"></div>
+                <h2 id="song-title">SoundHelix Track 1</h2>
+                <h3 id="artist-name">Unknown Artist</h3>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container" id="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button id="prev-btn" class="control-btn" title="Previous"><i class="fas fa-backward"></i></button>
+                <button id="play-btn" class="control-btn main-btn" title="Play"><i class="fas fa-play" id="play-icon"></i></button>
+                <button id="next-btn" class="control-btn" title="Next"><i class="fas fa-forward"></i></button>
+            </div>
+        </div>
     </body>
 </html>
