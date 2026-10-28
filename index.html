@@ -15,28 +15,61 @@
     </head>
     
     <body>
-        <div class="player-container">
-            <!-- Audio Element -->
-            <audio id="audio-element" src="https://soundhelix.com"></audio>
+        <div class="app-container">
+            <!-- Sidebar Navigation -->
+            <aside class="sidebar">
+                <h1 class="logo"><i class="fa-solid fa-waveform"></i> StreamWave</h1>
+                <nav>
+                    <a href="#" class="active"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+                    <a href="#"><i class="fa-solid fa-music"></i> Library</a>
+                </nav>
+            </aside>
 
-            <!-- Song Info -->
-            <div class="song-details">
-                <div class="album-art" id="album-art" style="background-image: url('https://unsplash.com');"></div>
-                <h2 id="song-title">SoundHelix Track 1</h2>
-                <h3 id="artist-name">Unknown Artist</h3>
-            </div>
+            <!-- Main Display Dashboard -->
+            <main class="main-content">
+                <header>
+                    <h2>Trending Now</h2>
+                </header>
 
-            <!-- Progress Bar -->
-            <div class="progress-container" id="progress-container">
-                <div class="progress-bar" id="progress-bar"></div>
-            </div>
-
-            <!-- Controls -->
-            <div class="controls">
-                <button id="prev-btn" class="control-btn" title="Previous"><i class="fas fa-backward"></i></button>
-                <button id="play-btn" class="control-btn main-btn" title="Play"><i class="fas fa-play" id="play-icon"></i></button>
-                <button id="next-btn" class="control-btn" title="Next"><i class="fas fa-forward"></i></button>
-            </div>
+                <!-- Interactive Track List -->
+                <div class="track-list" id="track-list">
+                    <!-- JavaScript will dynamically render songs here -->
+                </div>
+            </main>
         </div>
+
+        <!-- Hidden Audio Core Element -->
+        <audio id="audio-player" src=""></audio>
+
+        <!-- Bottom Persistent Media Player Bar -->
+        <footer class="player-bar">
+            <div class="current-track-info">
+                <img src="https://placeholder.com" alt="Album Cover" id="player-cover">
+                <div>
+                    <h4 id="player-title">Select a song</h4>
+                    <p id="player-artist">Artist</p>
+                </div>
+            </div>
+
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button id="prev-btn"><i class="fa-solid fa-backward-step"></i></button>
+                    <button id="play-btn" class="play-main"><i class="fa-solid fa-play"></i></button>
+                    <button id="next-btn"><i class="fa-solid fa-forward-step"></i></button>
+                </div>
+                
+                <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="progress-bar" min="0" max="100" value="0">
+                    <span id="total-duration">0:00</span>
+                </div>
+            </div>
+
+            <div class="volume-container">
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.8">
+            </div>
+        </footer>
     </body>
 </html>
