@@ -34,3 +34,64 @@ body{
   font-family: var(--font-family);
   margin: 0;
 }
+
+/* ---------- Header Styles ---------- */
+header{
+  padding: 1rem;
+  width: 968px;
+  margin: 0 auto;
+  background-color: var(--red);
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+/* ----- HEADING STYLES ----- */
+h1{
+  font-size: 3rem;
+  text-align: center;
+  color: var(--white);
+  font-family: var(--font-family);
+}
+
+/* ---------- Nav Ul Styles --------- */
+nav{
+  color: var(--white);
+  font-family: var(--font-family);
+}
+
+nav ul{
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+  float: none;
+  justify-content: center;
+}
+
+/* ---------- Main H2 Styles ---------- */
+main h2{
+  font-size: 1rem;
+  padding: 0;
+  width: fit-content;
+  margin: 0;
+  background-color: var(--red);
+  color: var(--white);
+}
+
+/* ---------- List Styles ---------- */
+li{
+  display: block;
+  text-align: left;
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: 'Cabin', sans-serif;
+}
+
+li a{
+  text-decoration: none;
+  color: var(--white);
+  font-family: 'Cabin', sans-serif;
+}
