@@ -23,8 +23,11 @@
     --font-family: 'Cabin', 'Open Sans', sans-serif;
 
     /* Background */
-    background-color: #eb1cf0;
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%236b1869' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url('images/dj-with-headphones-from-behind-at-electronic-music-festival-picjumbo-com.jpg');
+    background-size: 2752px 1835px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* ---------- Body Styles ---------- */
@@ -33,6 +36,10 @@ body{
   font-size: 1.1rem;
   font-family: var(--font-family);
   margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;       /* Centers the search bar vertically & horizontally */
+  min-height: 100vh;  
 }
 
 /* ---------- Header Styles ---------- */
@@ -95,3 +102,63 @@ li a{
   color: var(--white);
   font-family: 'Cabin', sans-serif;
 }
+
+/* Main container for the search bar */
+.music-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;                
+  max-width: 500px;
+}
+
+/* Form wrapper */
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #181818; /* Dark theme background */
+  border-radius: 50px;       /* Pill shape */
+  padding: 5px 15px;
+  border: 1px solid #333333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect on the form */
+.search-form:focus-within {
+  border-color: #1db954;     /* Accent green (e.g., Spotify style) */
+  box-shadow: 0 0 8px rgba(29, 185, 84, 0.3);
+}
+
+/* Text input field */
+.search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px;
+}
+
+/* Placeholder text color */
+.search-input::placeholder {
+  color: #b3b3b3;
+}
+
+/* Search submit button */
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #b3b3b3;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px;
+  transition: color 0.2s ease;
+}
+
+.search-button:hover {
+  color: #1db954;
+}
+
