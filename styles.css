@@ -127,7 +127,7 @@ li a{
 
 /* Focus effect on the form */
 .search-form:focus-within {
-  border-color: var(--purple);
+  border-color: var(--red);
   box-shadow: 0 0 8px var(--lt-med-gray);
 }
 
@@ -160,6 +160,55 @@ li a{
 }
 
 .search-button:hover {
-  color: var(--purple);
+  color: var(--red);
 }
 
+.player-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  color: var(--white);
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  color: var(--white);
+}
+
+.control-buttons aria-label {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  color: var(--white);
+}
+
+.volume-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  color: var(--white);
+}
+
+.current-track-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: var(--white);
+}
