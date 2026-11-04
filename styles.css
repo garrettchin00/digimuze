@@ -127,8 +127,8 @@ li a{
 
 /* Focus effect on the form */
 .search-form:focus-within {
-  border-color: #1db954;     /* Accent green (e.g., Spotify style) */
-  box-shadow: 0 0 8px rgba(29, 185, 84, 0.3);
+  border-color: var(--purple);
+  box-shadow: 0 0 8px var(--lt-med-gray);
 }
 
 /* Text input field */
@@ -160,6 +160,6 @@ li a{
 }
 
 .search-button:hover {
-  color: #1db954;
+  color: var(--purple);
 }
 
