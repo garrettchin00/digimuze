@@ -135,7 +135,7 @@ li a {
 
 /* Placeholder text color */
 .search-input::placeholder {
-  color: #b3b3b3;
+  color: var(--lt-gray);
 }
 
 /* Search submit button */
@@ -143,7 +143,7 @@ li a {
   background: transparent;
   border: none;
   outline: none;
-  color: #b3b3b3;
+  color: var(--lt-gray);
   cursor: pointer;
   font-size: 16px;
   padding: 8px;
@@ -290,7 +290,7 @@ li a {
   background: transparent;
   border: none;
   outline: none;
-  color: #ffffff;
+  color: var(--white);
   font-size: 14px;
   padding: 10px;
 }
