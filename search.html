@@ -16,7 +16,7 @@
         <script src="scripts.js" defer></script>
     </head>
     
-    <body>
+    <body class="search-page">
         <header>
             <!-- Sidebar Navigation -->
             <aside class="sidebar">
@@ -38,14 +38,15 @@
             </aside>
         </header>
         
-        <div class="music-search-container">
-            <form class="search-form">
-                <input type="text" placeholder="Search songs, artists, or albums..." class="search-input">
-                <button type="submit" class="search-button" aria-label="Search">
-                <i class="fa fa-search"></i> <!-- Or your preferred icon -->
-                </button>
-            </form>
-        </div>
-
+        <main class="search main">
+            <div class="search-music-container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search songs, artists, or albums..." class="search-input">
+                    <button type="submit" class="search-button" aria-label="Search">
+                    <i class="fa fa-search"></i> <!-- Or your preferred icon -->
+                    </button>
+                </form>
+            </div>
+        </main>
     </body>
 </html>

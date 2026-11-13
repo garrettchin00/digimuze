@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* ---------- CSS Variables ---------- */
-:root{
+:root {
   /* Theme Colors */
     --red: #c72615;
     --white: #fff;
@@ -22,17 +22,10 @@
 
     /* ----- FONTS ----- */
     --font-family: 'Cabin', 'Open Sans', sans-serif;
-
-    /* Background */
-    background-image: url('images/dj-with-headphones-from-behind-at-electronic-music-festival-picjumbo-com.jpg');
-    background-size: 2752px 1835px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 /* ---------- Body Styles ---------- */
-body{
+body {
   box-sizing: border-box;
   font-size: 1.1rem;
   font-family: var(--font-family);
@@ -40,11 +33,16 @@ body{
   padding: 0;
   display: grid;
   place-items: center;       /* Centers the search bar vertically & horizontally */
-  min-height: 100vh;  
+  min-height: 100vh;
+  background-image: url('images/dj-with-headphones-from-behind-at-electronic-music-festival-picjumbo-com.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* ---------- Header Styles ---------- */
-header{
+header {
   padding: 1rem;
   width: 968px;
   margin: 0 auto;
@@ -55,7 +53,7 @@ header{
 }
 
 /* ----- HEADING STYLES ----- */
-h1{
+h1 {
   font-size: 3rem;
   text-align: center;
   color: var(--white);
@@ -63,12 +61,12 @@ h1{
 }
 
 /* ---------- Nav Ul Styles --------- */
-nav{
+nav {
   color: var(--white);
   font-family: var(--font-family);
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   padding-left: 0;
   display: flex;
@@ -79,7 +77,7 @@ nav ul{
 }
 
 /* ---------- Main H2 Styles ---------- */
-main h2{
+main h2 {
   font-size: 1rem;
   padding: 0;
   width: fit-content;
@@ -89,7 +87,7 @@ main h2{
 }
 
 /* ---------- List Styles ---------- */
-li{
+li {
   display: block;
   text-align: left;
   color: var(--white);
@@ -98,7 +96,7 @@ li{
   font-family: 'Cabin', sans-serif;
 }
 
-li a{
+li a {
   text-decoration: none;
   color: var(--white);
   font-family: 'Cabin', sans-serif;
@@ -179,7 +177,7 @@ li a{
   color: var(--white);
 }
 
-.control-buttons aria-label {
+.control-buttons [aria-label] {
   font-size: 1.5rem;
   cursor: pointer;
   transition: color 0.2s ease;
@@ -211,4 +209,73 @@ li a{
   align-items: center;
   margin-top: 20px;
   color: var(--white);
+}
+
+/* Search results container */
+#search-results {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  color: var(--white);
+}
+
+#search-results ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#search-results li {
+  padding: 10px;
+  border-bottom: 1px solid var(--lt-gray);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#search-results li:hover {
+  background-color: var(--dk-gray);
+}
+
+
+/* Search */
+.search-page {
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;       /* Centers the search bar vertically & horizontally */
+  min-height: 100vh;
+  background-image: url('images/wavy-background-violet-smokey-lines/3551431.jpg');
+  background-color: var(--gray);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.search-main {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 100vh;
+}
+
+.search-music-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.search-form {
+  display: flex;
+  width: 100%;
+}
+
+.search-input {
+  flex: 1;
 }
