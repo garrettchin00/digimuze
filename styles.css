@@ -119,10 +119,10 @@ li a {
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: #181818; /* Dark theme background */
-  border-radius: 50px;       /* Pill shape */
+  background-color: var(--dk-gray);
+  border-radius: 50px;
   padding: 5px 15px;
-  border: 1px solid #333333;
+  border: 1px solid var(--lt-gray);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
 }
@@ -402,7 +402,7 @@ label {
 }
 
 button[type="submit"] {
-  background-color: var(--red);
+  background-color: none;
   color: var(--white);
   border: none;
   padding: 0.5rem 1rem;
