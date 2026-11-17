@@ -363,8 +363,8 @@ li a {
   font-family: var(--font-family);
 }
 
-.login-form .signup-button,
-.signup-form .login-button {
+.login-form button,
+.signup-form button {
   background-color: var(--red);
   color: var(--white);
   border: none;
@@ -374,6 +374,12 @@ li a {
   border-radius: 4px;
   transition: background-color 0.3s ease;
   font-family: var(--font-family);
+}
+
+.login-form button:hover,
+.signup-form button:hover {
+  background-color: darken(var(--red), 10%);
+  color: var(--white);
 }
 
 .login-form .login-button,
