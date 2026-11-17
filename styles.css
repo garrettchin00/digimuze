@@ -309,3 +309,105 @@ li a {
   width: 100%;
   box-sizing: border-box;
 }
+
+/* Login and Signup Forms */
+.login .login-form,
+.signup .signup-form {
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: var(--white);
+  font-family: var(--font-family);
+  text-align: left;
+}
+
+.login .login-form input,
+.signup .signup-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--lt-gray);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  color: var(--white);
+  background-color: var(--dk-gray);
+}
+
+.login .login-form input:focus,
+.signup .signup-form input:focus {
+  outline: none;
+  border-color: var(--red);
+  box-shadow: 0 0 5px var(--red);
+}
+
+.login .login-form a,
+.signup .signup-form a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.login .login-form a:hover,
+.signup .signup-form a:hover {
+  text-decoration: none;
+  color: var(--red);
+}
+
+.login-form p,
+.signup-form p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--white);
+  font-family: var(--font-family);
+}
+
+.login-form .signup-button,
+.signup-form .login-button {
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-family);
+}
+
+.login-form .login-button,
+.signup-form .signup-button {
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.login-form .login-button:hover,
+.signup-form .signup-button:hover {
+  background-color: darken(var(--red), 10%);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-family: var(--font-family);
+  color: var(--white);
+}
+
+button[type="submit"] {
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
