@@ -484,7 +484,6 @@ label {
 }
 
 button[type="submit"] {
-  background-color: none;
   color: var(--white);
   border: none;
   padding: 0.5rem 1rem;
@@ -511,7 +510,6 @@ footer {
   padding: 1rem;
   width: 968px;
   margin: 0 auto;
-  background-color: none;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
@@ -551,9 +549,7 @@ footer {
   padding: 0.5rem;
   color: var(--black);
   text-underline-offset: 4px;
-  text-decoration-color: none;
   text-decoration-thickness: 2px;
-  text-underline: none;
 }
 
 .about footer a:hover,
