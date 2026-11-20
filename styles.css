@@ -417,3 +417,47 @@ button[type="submit"] {
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
+
+/* ---------- Footer Styles ---------- */
+footer{
+  padding: 1rem;
+  width: 968px;
+  margin: 0 auto;
+  background-color: var(--white);
+  text-align: center;
+  padding-top: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer h2{
+  margin: 0 auto;
+  font-size: 1.35rem;
+  line-height: 1;
+  grid-column: 1/-1;
+}
+
+footer section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem 1rem;
+  width: 520px;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+}
+
+footer a{
+  padding: 0.5rem;
+  color: var(--black);
+  text-underline-offset: 4px;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 2px;
+}
+
+footer a:hover{
+  color: var(--red);
+}
+
+footer p{
+  margin: 0 auto;
+  font-size: 1rem;
+}
