@@ -1,0 +1,95 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Welcome to DigiMuze!">
+        <title>DigiMuze - Home of the Artist</title>
+        <meta name="author" content="Garrett Chin">
+        <link rel="stylesheet" href="styles.css">
+        <!-- FontAwesome for Control Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- FAVICON -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <!-- GOOGLE FONTS LINKS -->
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <script src="scripts.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- Sidebar Navigation -->
+            <aside class="sidebar">
+                <h1>DigiMuze</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index2.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="search2.html"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                        <li><a href="about2.html"><i class="fa-solid fa-info-circle"></i> About</a></li>
+                        <li><a href="contact2.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                        <li><a href="logout.html"><i class="fa-solid fa-user"></i> Logout</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </header>
+
+        <div class="app-container">
+            <!-- Main Display Dashboard -->
+            <main class="main-content">
+                <header>
+                    <h2>Trending Now</h2>
+                </header>
+
+                <!-- Interactive Track List -->
+                <div class="track-list" id="track-list">
+                    <!-- JavaScript will dynamically render songs here -->
+                </div>
+            </main>
+        </div>
+
+        <div class="music-search-container">
+            <form class="search-form" action="search.html" method="get">
+                <input type="text" placeholder="Search songs, artists, or albums..." class="search-input">
+                <button type="submit" class="search-button" aria-label="Search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+
+        <!-- Hidden Audio Core Element -->
+        <audio id="audio-player" src=""></audio>
+
+        <!-- Bottom Persistent Media Player Bar -->
+        <footer class="player-bar">
+            <div class="current-track-info">
+                <img src="https://placeholder.com" alt="Album Cover" id="player-cover">
+                <div>
+                    <h4 id="player-title">Select a song</h4>
+                    <p id="player-artist">Artist</p>
+                </div>
+            </div>
+
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button id="prev-btn" aria-label="Previous track"><i class="fa-solid fa-backward-step"></i></button>
+                    <button id="play-btn" class="play-main" aria-label="Play or pause"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+                    <button id="next-btn" aria-label="Next track"><i class="fa-solid fa-forward-step" aria-hidden="true"></i></button>
+                </div>
+                
+                <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="progress-bar" min="0" max="100" value="0">
+                    <span id="total-duration">0:00</span>
+                </div>
+
+                <div class="volume-container">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.8">
+                </div>
+            </div>
+            
+        </footer>
+    </body>
+</html>
+</html>

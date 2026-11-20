@@ -42,7 +42,7 @@ loginForm.addEventListener("submit", (event) => {
     
     // Optional: Redirect after 1.5 seconds
     setTimeout(() => {
-      window.location.href = "dashboard.html";
+      window.location.href = "index2.html";
     }, 1500);
   } else {
     messageEl.textContent = "Invalid username/email or password. Please try again.";
