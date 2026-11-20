@@ -5,9 +5,6 @@ document.body.innerHTML = `
   <div class="login-container">
     <form class="login-form" id="login-form">
       <h1>Login to DigiMuze</h1>
-      
-      <!-- Placeholder for success or error messages -->
-      <p id="login-message" style="font-weight: bold;"></p>
 
       <label for="username-email">Username or Email:</label>
       <input type="text" id="username-email" name="username-email" required>
@@ -17,6 +14,9 @@ document.body.innerHTML = `
 
       <br><button type="submit">Login</button>
 
+      <!-- Placeholder for success or error messages -->
+      <p id="login-message" style="font-weight: bold;"></p>
+      
       <p>Don't have an account?</p>
       <br><button type="button" id="signup-button">Sign up here</button>.
     </form>
