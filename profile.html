@@ -33,5 +33,69 @@
                 </nav>
             </aside>
         </header>
+          
+        <div class="container">
+            <!-- User Header -->
+            <header class="profile-header">
+                <img src="https://placeholder.com" alt="User Avatar" class="avatar">
+                <div class="profile-meta">
+                    <span class="badge">Premium Listener</span>
+                    <h1>Garrett Chin</h1>
+                    <p class="stats">14 Public Playlists &bull; 320 Followers &bull; 185 Following</p>
+                </div>
+            </header>
+
+            <!-- Content Grid -->
+            <main class="grid-layout">
+                <!-- Account Details Form -->
+                <section class="card">
+                    <h2>Account Information</h2>
+                    <form id="profile-form">
+                        <div class="form-group">
+                            <label for="username">Display Name</label>
+                            <input type="text" id="username" value="Garrett Chin">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" value="garrettchin00@gmail.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="quality">Streaming Audio Quality</label>
+                            <select id="quality">
+                                <option value="normal">Normal (96 kbps)</option>
+                                <option value="high">High (160 kbps)</option>
+                                <option value="lossless" selected>Very High / Lossless (320 kbps)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary">Save Changes</button>
+                    </form>
+                </section>
+
+                <!-- Subscription & Top Artists -->
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <section class="card">
+                    <h2>Subscription Plan</h2>
+                    <div class="plan-box">
+                        <strong>StreamBeats Individual</strong>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">
+                        Ad-free listening, offline downloads, and unlimited skips. Next billing date: Dec 19, 2026.
+                        </p>
+                    </div>
+                    </section>
+
+                    <section class="card">
+                        <h2>Top Artists This Month</h2>
+                        <ul class="item-list">
+                            <li><span>1. Daft Punk</span> <span class="stats">42 plays</span></li>
+                            <li><span>2. Tame Impala</span> <span class="stats">31 plays</span></li>
+                            <li><span>3. Phoebe Bridgers</span> <span class="stats">27 plays</span></li>
+                        </ul>
+                    </section>
+
+                </div>
+            </main>
+        </div>
     </body>
 </html>
