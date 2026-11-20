@@ -4,7 +4,7 @@ document.body.className = 'signup-page';
 document.body.innerHTML = `
   <div class="signup-container">
     <form class="signup-form" id="signup-form">
-      <h1>Sign Up for DigiMaze</h1>
+      <h1>Sign Up for DigiMuze</h1>
       
       <!-- Container to show success or error feedback -->
       <div id="status-message" role="alert"></div>
