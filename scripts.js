@@ -1,37 +1,6 @@
 // Index and Search
-// 1. Sample Track Data (Replace src and cover with your actual file paths or URLs)
 // ==========================================
-// 1. SHARED TRACK DATA
-// ==========================================
-const tracks = [
-    {
-        id: 1,
-        title: "Midnight Echoes",
-        artist: "Neon Drift",
-        album: "Synthwave Nights",
-        cover: "https://placeholder.com",
-        src: "https://soundhelix.com"
-    },
-    {
-        id: 2,
-        title: "Electric Horizon",
-        artist: "Lunar Pulse",
-        album: "Starlight",
-        cover: "https://placeholder.com",
-        src: "https://soundhelix.com"
-    },
-    {
-        id: 3,
-        title: "Velvet Sky",
-        artist: "Aura",
-        album: "Dreamscape",
-        cover: "https://placeholder.com",
-        src: "https://soundhelix.com"
-    }
-];
-
-// ==========================================
-// 2. SHARED AUDIO & PLAYER BAR LOGIC
+// 1. SHARED AUDIO & PLAYER BAR LOGIC
 // ==========================================
 const audioPlayer = document.getElementById('audio-player');
 const playerCover = document.getElementById('player-cover');
@@ -105,7 +74,7 @@ function createTrackCard(track) {
 }
 
 // ==========================================
-// 3. HOME PAGE LOGIC (index.html)
+// 2. HOME PAGE LOGIC (index.html)
 // ==========================================
 const homeTrackList = document.getElementById('track-list');
 
@@ -116,7 +85,7 @@ if (homeTrackList) {
 }
 
 // ==========================================
-// 4. SEARCH PAGE LOGIC (search.html)
+// 3. SEARCH PAGE LOGIC (search.html)
 // ==========================================
 const searchResultsContainer = document.getElementById('search-results');
 const searchForm = document.querySelector('.search-form');

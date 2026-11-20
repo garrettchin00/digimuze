@@ -28,8 +28,7 @@ document.body.innerHTML = `
       <button type="submit">Sign Up</button>
       
       <p>Already have an account?</p>
-      <br>
-      <button type="button" id="login-button">Login here</button>.
+      <br><button id="login-button" onclick="window.location.href='login.html'">Login here</button>
     </form>
   </div>
 `;
@@ -80,7 +79,7 @@ form.addEventListener('submit', async (event) => {
   }
 });
 
-// Login button redirect
+// Handle login button redirect
 document.getElementById('login-button').addEventListener('click', () => {
   window.location.href = 'login.html';
 });
