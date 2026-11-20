@@ -36,7 +36,7 @@ loginForm.addEventListener("submit", (event) => {
   const passwordInput = document.getElementById("password").value;
 
   // 3. Check credentials (Replace this block with a real backend API call later)
-  if (usernameInput === "admin" && passwordInput === "1234") {
+  if (usernameInput === "garrett00" && passwordInput === "Banana1234") {
     messageEl.textContent = "Login successful! Redirecting...";
     messageEl.style.color = "green";
     
