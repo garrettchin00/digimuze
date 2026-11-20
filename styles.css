@@ -123,6 +123,49 @@ li a {
   font-family: 'Cabin', sans-serif;
 }
 
+/* 1. Centers the search bar container horizontally */
+.music-search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* 2. Keeps the input and search button aligned side-by-side */
+.search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Controls how wide the search bar gets */
+}
+
+/* 3. Makes the text box fill the remaining width inside the form */
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid var(--white);
+    border-right: none;
+    border-radius: 20px 0 0 20px; /* Rounded left corners */
+    outline: none;
+}
+
+/* 4. Styles the attached search button */
+.search-button {
+    padding: 10px 18px;
+    font-size: 16px;
+    border: 1px solid var(--white);
+    border-radius: 0 20px 20px 0; /* Rounded right corners */
+    background-color: var(--red);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: var(--red);
+}
+
 /* Main container for the search bar */
 .music-search-container {
   display: flex;
@@ -151,7 +194,7 @@ li a {
 /* Focus effect on the form */
 .search-form:focus-within {
   border-color: var(--red);
-  box-shadow: 0 0 8px var(--lt-med-gray);
+  box-shadow: 0 0 8px var(--lt-gray);
 }
 
 /* Placeholder text color */
@@ -169,10 +212,6 @@ li a {
   font-size: 16px;
   padding: 8px;
   transition: color 0.2s ease;
-}
-
-.search-button:hover {
-  color: var(--red);
 }
 
 .player-controls {
